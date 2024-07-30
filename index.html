@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Pictures/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="https://kit.fontawesome.com/48918701e6.js" crossorigin="anonymous"></script>
+  <title>Music Player</title>
+</head>
+<body>
+  <div class="container">
+    <!-- background Song Cover -->
+    <div class="bg-cover"></div>
+    <!-- Header Start -->
+    <header>
+      <div class="logo">
+      <i class="fi fi-rr-waveform"></i>
+    </div>
+      <div class="search">
+        <i class="fi fi-br-search"></i>
+        <input id="search" placeholder="Search for a song">
+      </div>
+      <div class="theme ele">
+        <i class="fi fi-br-sun"></i>
+        <i class="fi fi-br-moon-stars"></i>
+      </div>
+      <i class="settings fi fi-rs-settings ele"></i>
+      <div class="bell ele">
+        <i class="fi fi-rr-bell"></i>
+      </div>
+      
+      <img src="Pictures/pfp.jpg" alt="Profil-pic" class="ele">
+    </header>
+    <!-- Header End -->
+    <!-- Player Start -->
+    <div class="player">
+      <!-- Section Start -->
+      <section>
+        <!-- Control Start -->
+        <div class="cover-control">
+          <img class="song-cover" src="" alt="song_cover">
+          <div class="control">
+            <div class="shuffle">
+              <i class="fi fi-rr-shuffle"></i>
+            </div>
+            <i class="fi fi-ss-step-backward backward"></i>
+            <div class="play">
+              <i class="fi fi-ss-play"></i>
+            </div>
+            <i class="fi fi-ss-step-forward forward"></i>
+            <i class="fi fi-rr-arrows-repeat repeat"></i>
+          </div>
+        </div>
+        <!-- Control End -->
+        <!-- List Start -->
+        <div class="song-list">
+          <div class="infos">
+            <div class="song-name">Akanesasu</div>
+            <div class="song-info">
+              <span class="artist">Aimer</span>
+              <i class="fi fi-ss-bullet"></i>
+              <span class="album">Blanc</span>
+            </div>
+          </div>
+          <ul class="list">
+            <li artist="Aimer" album="Blanc" song-src="Songs/Aimer - AkaneSasu.mp3" cover-src="Pictures/Aimer - Akanesasu_cover.jpg">
+              <span class="index">#</span>
+              <span class="name">AkaneSasu</span>
+              <span class="duration"></span>
+            </li>
+            <li artist="Aimer" album="Shiroiro Kagerou" song-src="Songs/Aimer - Shiroiro Kagerou.mp3" cover-src="Pictures/Aimer - Shiroiro Kagerou_cover.jpg">
+              <span class="index">#</span>
+              <span class="name">Shiroiro Kagerou</span>
+              <span class="duration"></span>
+            </li>
+            <li artist="YUNGBLUD" album="Abyss" song-src="Songs/YUNGBLUD - Abyss.mp3" cover-src="Pictures/YUNGBLUD - Abyss_cover.jpg">
+              <span class="index">#</span>
+              <span class="name">Abyss</span>
+              <span class="duration"></span>
+            </li>
+            <li artist="Em Beihold" album="Egg in the Backseat" song-src="Songs/Em Beihold - Numb Little Bug.mp3" cover-src="Pictures/Em Beihold - Numb Little Bug_cover.jpg">
+              <span class="index">#</span>
+              <span class="name">Numb Little Bug</span>
+              <span class="duration"></span>
+            </li>
+            <li artist="Uru" album="Kokoroe" song-src="Songs/Uru - Kamihitoe.mp3" cover-src="Pictures/Uru - Kamihitoe_cover.jpg">
+              <span class="index">#</span>
+              <span class="name">Kamihitoe</span>
+              <span class="duration"></span>
+            </li>
+            <li artist="Stephen Sanchez" album="Angel Face" song-src="Songs/Stephen Sanchez - Until I Found You.mp3" cover-src="Pictures/Stephen Sanchez - Until I Found You_cover.jpg">
+              <span class="index">#</span>
+              <span class="name">Until I Found You</span>
+              <span class="duration"></span>
+            </li>
+            <li artist="Aimer" album="Zankyosanka" song-src="Songs/Aimer - Zankyosanka.mp3" cover-src="Pictures/Zankyosanka_cover.jpg">
+              <span class="index">#</span>
+              <span class="name">Zankyosanka</span>
+              <span class="duration"></span>
+            </li>
+            <li artist="Aimer" album="Black Bird" song-src="Songs/Aimer - Kyou kara Omoide.mp3" cover-src="Pictures/Aimer - Kyou Kara Omoide_cover.jpg">
+              <span class="index">#</span>
+              <span class="name">Kyou kara Omoide</span>
+              <span class="duration"></span>
+            </li>
+            <li artist="Aimer" album="Dawn" song-src="Songs/Aimer - Kimi wo Matsu.mp3" cover-src="Pictures/Aimer - Kimi Wo Matsu_cover.jpg">
+              <span class="index">#</span>
+              <span class="name">Kimi wo Matsu</span>
+              <span class="duration"></span>
+            </li>
+          </ul>
+        </div>
+        <!-- List End -->
+      </section>
+      <!-- Section End -->
+      <!-- Progress_Bar Start -->
+      <div class="progress_bar">
+        <span class="current_duration">0:00</span>
+        <div class="bar">
+          <div class="fill_bar"></div>
+        </div>
+        <span class="duration">0:00</span>
+      </div>
+      <!-- Progress_Bar End -->
+    </div>
+    <!-- Player End -->
+  </div>
+  <script src="JS/script.js"></script>
+</body>
+</html>
